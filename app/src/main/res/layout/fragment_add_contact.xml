@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_win"
+    android:padding="16dp"
+    tools:context=".ui.addfragment.AddContactFragment">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/iv_close_width"
+        android:layout_height="@dimen/iv_close_height"
+        android:src="@drawable/baseline_clear_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/tv_title_add_fragment_padding_horizontal"
+        android:paddingVertical="@dimen/tv_title_add_fragment_padding_vertical"
+        android:text="@string/add_your_contact_information"
+        android:textSize="@dimen/tv_title_add_fragment_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivClose" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_name_margin_top"
+        android:hint="@string/name"
+        android:maxLines="1"
+        android:minHeight="@dimen/et_name_min_height"
+        android:padding="@dimen/et_name_padding"
+        android:textColorHint="@color/et_name_text_color_hint"
+        android:textSize="@dimen/et_name_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_phone_margin_top"
+        android:gravity="top"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:minHeight="@dimen/et_phone_min_height"
+        android:padding="@dimen/et_phone_padding"
+        android:textColorHint="@color/et_phone_text_color_hint"
+        android:textSize="@dimen/et_phone_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        tools:ignore="TextFields" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_save_margin_top"
+        android:backgroundTint="@color/btn_save_background_hint"
+        android:paddingHorizontal="@dimen/btn_save_padding_horizontal"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_save_text_size"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/btn_save_corner_radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

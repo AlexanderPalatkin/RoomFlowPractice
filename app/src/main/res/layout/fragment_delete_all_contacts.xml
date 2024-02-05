@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_win"
+    android:padding="15dp"
+    tools:context=".ui.deleteall.DeleteAllContactsFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_all_contacts"
+        android:textColor="@color/tv_title_delete_fragment_text_color"
+        android:textSize="@dimen/tv_title_delete_fragment_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_subtitle_margin_top"
+        android:layout_marginHorizontal="@dimen/tv_subtitle_margin_horizontal"
+        android:text="@string/are_you_sure_to_delete_all_contacts"
+        android:textColor="@color/tv_subtitle_text_color"
+        android:textSize="@dimen/tv_subtitle_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/btnPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_pozitive_margin_top"
+        android:text="@string/yes"
+        android:textColor="@color/btn_pozitive_text_color"
+        android:textSize="@dimen/btn_pozitive_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btnNegative"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+    <TextView
+        android:id="@+id/btnNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_negative_margin_top"
+        android:text="@string/cancel"
+        android:textColor="@color/btn_negative_text_color"
+        android:textSize="@dimen/btn_negative_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPositive"
+        app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

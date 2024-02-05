@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RoomFlowPractice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="there_is_no_contact">There is no contact</string>
+    <string name="add_your_contact_information">Add your contact information</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="delete_all_contacts">Delete all Contacts</string>
+    <string name="are_you_sure_to_delete_all_contacts">Are you sure to delete all contacts?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="delete">Delete</string>
+</resources>

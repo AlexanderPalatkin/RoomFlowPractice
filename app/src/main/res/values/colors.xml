@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="activity_menu">#007988</color>
+    <color name="et_name_text_color_hint">#009688</color>
+    <color name="et_phone_text_color_hint">#009688</color>
+    <color name="btn_save_background_hint">#009688</color>
+    <color name="tv_title_delete_fragment_text_color">#000000</color>
+    <color name="tv_subtitle_text_color">#575757</color>
+    <color name="btn_pozitive_text_color">#4CAF50</color>
+    <color name="btn_negative_text_color">#000000</color>
+</resources>
